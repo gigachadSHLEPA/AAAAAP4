@@ -1,0 +1,40 @@
+﻿<Page x:Class="AP4____.View.Pages.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AP4____.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="720"
+      Title="Page1">
+
+    <Border Height="1080" Width="600">
+        <Grid>
+            
+            <Image Source="/images/beliy.jpg" Stretch="UniformToFill"/>
+            <TextBlock Text="GIGACHAD" FontSize="105" VerticalAlignment="Center"
+                        Margin="0 100 0 0"
+                       Style="{StaticResource TxtFont}">
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="TextBlock.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation
+                                    Storyboard.Target="{Binding ElementName = MyFadingText}" 
+                                    Storyboard.TargetProperty="(TextBlock.Opacity)"
+                                    From="1.0" To="0.0" Duration="0:0:2" 
+                                    AutoReverse="True" RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+            <Grid>
+                <Image Source="/images/gigachad.png" Stretch="UniformToFill" HorizontalAlignment="Center"/>
+            </Grid>
+        </Grid>
+
+
+    </Border>
+
+</Page>
