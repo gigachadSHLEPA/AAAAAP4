@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using AP4____.Core;
 
 namespace AP4____.View.Pages
 {
@@ -21,6 +22,17 @@ namespace AP4____.View.Pages
         public Page1()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Coree.MyCore?.Navigate(new MainPage());
+        }
+        void MediaElement_MediaEnded(object sender, EventArgs e)
+        {
+            MediaElement mediaElement = (MediaElement)sender;
+            mediaElement.Stop();
+            mediaElement.Play();
         }
     }
 }

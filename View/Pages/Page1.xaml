@@ -10,10 +10,15 @@
 
     <Border Height="1080" Width="600">
         <Grid>
+
+            <MediaElement Source="C:\Users\baki\Source\Repos\AAAAAP4\video\fon.mp4" LoadedBehavior="Play" Stretch="UniformToFill"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                UnloadedBehavior="Manual"
+                />
             
-            <Image Source="/images/beliy.jpg" Stretch="UniformToFill"/>
-            <TextBlock Text="GIGACHAD" FontSize="105" VerticalAlignment="Center"
-                        Margin="0 100 0 0"
+            <TextBlock Text="GIGA" FontSize="195" HorizontalAlignment="Right" VerticalAlignment="Center"
+                        Margin="0 150 37 0"
                        Style="{StaticResource TxtFont}">
                 <TextBlock.Triggers>
                     <EventTrigger RoutedEvent="TextBlock.Loaded">
@@ -22,7 +27,7 @@
                                 <DoubleAnimation
                                     Storyboard.Target="{Binding ElementName = MyFadingText}" 
                                     Storyboard.TargetProperty="(TextBlock.Opacity)"
-                                    From="1.0" To="0.0" Duration="0:0:2" 
+                                    From="1.0" To="0.0" Duration="0:0:2.5" 
                                     AutoReverse="True" RepeatBehavior="Forever" />
                             </Storyboard>
                         </BeginStoryboard>
@@ -31,6 +36,34 @@
             </TextBlock>
             <Grid>
                 <Image Source="/images/gigachad.png" Stretch="UniformToFill" HorizontalAlignment="Center"/>
+                <TextBlock Text="CHAD" FontSize="180" HorizontalAlignment="Right" VerticalAlignment="Center"
+                        Margin="0 450 0 0"
+                       Style="{StaticResource TxtFont}" Foreground="DarkRed">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation
+                                    Storyboard.Target="{Binding ElementName = MyFadingText}" 
+                                    Storyboard.TargetProperty="(TextBlock.Opacity)"
+                                    From="1.0" To="0.0" Duration="0:0:2.5" 
+                                    AutoReverse="True" RepeatBehavior="Forever" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+                </TextBlock>
+                <Button 
+                                Background="Gray"
+                            Opacity="0.3"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 650 10 0"
+                        HorizontalAlignment="Right"
+                                Height="50" Width="310" Click="Button_Click"
+                        
+                            FontFamily="Palatino Linotype"
+                                />
             </Grid>
         </Grid>
 

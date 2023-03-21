@@ -5,34 +5,149 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AP4____.View.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="1440" d:DesignWidth="720"
+      d:DesignHeight="561" d:DesignWidth="720"
       Title="MainPage">
 
-    <Border Height="1080" Width="600">
+    <Border Height="561" Width="720">
         <Grid>
-            <Image Source="/images/beliy.jpg" Stretch="UniformToFill"/>
-            <!--<TextBlock Text="GIGACHAD" FontSize="105" VerticalAlignment="Center"
-                        Margin="0 100 0 0" FontFamily="Palatino Linotype" Name="MyFadingText">
-                <TextBlock.Triggers>
-                    <EventTrigger RoutedEvent="TextBlock.Loaded">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-            Storyboard.TargetName="MyFadingText" 
-            Storyboard.TargetProperty="(TextBlock.Opacity)"
-            From="1.0" To="0.0" Duration="0:0:5" 
-            AutoReverse="True" RepeatBehavior="Forever" />
-                            </Storyboard>
-                        </BeginStoryboard>
+            <Image Source="/images/chad.jpg"/>
+            <MediaElement Name="myMediaElement" Opacity="0.15" Stretch="UniformToFill" Margin="0,32,0,30">
+                <MediaElement.Triggers>
+                    <EventTrigger RoutedEvent="MediaElement.Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <MediaTimeline Source="C:\Users\baki\Source\Repos\AAAAAP4\video\ae.mp4" Storyboard.TargetName="myMediaElement"  
+                 RepeatBehavior="Forever" />
+
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
                     </EventTrigger>
-                </TextBlock.Triggers>
-            </TextBlock>-->
-            <Grid>
-                <Image Source="/images/gigachad.png" Stretch="UniformToFill" HorizontalAlignment="Center"/>
-            </Grid>
+                </MediaElement.Triggers>
+            </MediaElement>
+            <Image Source="/images/chadd.png"/>
+            <StackPanel Orientation="Vertical"
+                                    HorizontalAlignment="Center"
+                                    Margin="0 250 425 0" >
+
+                <Button Content="1"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 0 0 0"
+                               Click="Button_Click"
+                            FontFamily="Palatino Linotype"
+                                Width="225" />
+                <Button Content="2"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            Click="Button_Click_1" FontFamily="Palatino Linotype">
+
+                </Button>
+                <Button Content="3"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            FontFamily="Palatino Linotype" Click="Button_Click_2"/>
+                <Button Content="4"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            FontFamily="Palatino Linotype" Click="Button_Click_3"/>
+                <Button Content="5"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            FontFamily="Palatino Linotype" Click="Button_Click_4"/>
+                <Button Content="6"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                           FontFamily="Palatino Linotype" Click="Button_Click_5"/>
+                <Button Content="7"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            FontFamily="Palatino Linotype" Click="Button_Click_6"
+                            />
+            </StackPanel>
+            <StackPanel Orientation="Vertical"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,250,45,0" >
+
+                <Button Content="8"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 0 0 0"
+                               
+                            FontFamily="Palatino Linotype"
+                                Width="225" Click="Button_Click_77"/>
+                <Button Content="9"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            Click="Button_Click_7" FontFamily="Palatino Linotype">
+
+                </Button>
+                <Button Content="10"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            FontFamily="Palatino Linotype" Click="Button_Click_8"/>
+                <Button Content="11"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            FontFamily="Palatino Linotype" Click="Button_Click_9"/>
+                <Button Content="12"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            FontFamily="Palatino Linotype" Click="Button_Click_10"/>
+                <Button Content="13"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                           FontFamily="Palatino Linotype" Click="Button_Click_11"/>
+                <Button Content="14"
+                                Background="Black"
+                            Opacity="0.09"
+                                Foreground="White"
+                                BorderBrush="White"
+                                Margin="0 10 0 0"
+                            FontFamily="Palatino Linotype" Click="Button_Click_12"
+                            />
+            </StackPanel>
+
         </Grid>
-        
-        
+
+
     </Border>
-    
 </Page>

@@ -9,8 +9,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="fonts\Bayon-Regular.ttf" />
+    <None Remove="fonts\Typometry_Regular.ttf" />
     <None Remove="images\beliy.jpg" />
+    <None Remove="images\chad.jpg" />
+    <None Remove="images\chadd.png" />
+    <None Remove="images\feels.png" />
     <None Remove="images\gigachad.png" />
+    <None Remove="images\Task1.jpg" />
+    <None Remove="images\Task10.jpg" />
+    <None Remove="images\Task11.jpg" />
+    <None Remove="images\Task12.jpg" />
+    <None Remove="images\Task13.jpg" />
+    <None Remove="images\Task14.jpg" />
+    <None Remove="images\Task2.jpg" />
+    <None Remove="images\Task3.jpg" />
+    <None Remove="images\Task4.jpg" />
+    <None Remove="images\Task5.jpg" />
+    <None Remove="images\Task6.jpg" />
+    <None Remove="images\Task7.jpg" />
+    <None Remove="images\Task8.jpg" />
+    <None Remove="images\Task9.jpg" />
+    <None Remove="video\ae.mp4" />
+    <None Remove="video\fon.mp4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,8 +39,29 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="fonts\Bayon-Regular.ttf" />
+    <Resource Include="fonts\Typometry_Regular.ttf" />
     <Resource Include="images\beliy.jpg" />
+    <Resource Include="images\chad.jpg" />
+    <Resource Include="images\chadd.png" />
+    <Resource Include="images\feels.png" />
     <Resource Include="images\gigachad.png" />
+    <Resource Include="images\Task1.jpg" />
+    <Resource Include="images\Task10.jpg" />
+    <Resource Include="images\Task11.jpg" />
+    <Resource Include="images\Task12.jpg" />
+    <Resource Include="images\Task13.jpg" />
+    <Resource Include="images\Task14.jpg" />
+    <Resource Include="images\Task2.jpg" />
+    <Resource Include="images\Task3.jpg" />
+    <Resource Include="images\Task4.jpg" />
+    <Resource Include="images\Task5.jpg" />
+    <Resource Include="images\Task6.jpg" />
+    <Resource Include="images\Task7.jpg" />
+    <Resource Include="images\Task8.jpg" />
+    <Resource Include="images\Task9.jpg" />
+    <Resource Include="video\ae.mp4" />
+    <Resource Include="video\fon.mp4" />
 
   </ItemGroup>
 

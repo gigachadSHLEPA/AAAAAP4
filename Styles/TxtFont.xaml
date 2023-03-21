@@ -4,4 +4,7 @@
     <Style TargetType="TextBlock" x:Key="TxtFont">
         <Setter Property="TextElement.FontFamily" Value="/fonts/#Bayon Regular"/>
     </Style>
+    <Style TargetType="TextBlock" x:Key="TxtFont1">
+        <Setter Property="TextElement.FontFamily" Value="/fonts/#Typometry Regular"/>
+    </Style>
 </ResourceDictionary>
